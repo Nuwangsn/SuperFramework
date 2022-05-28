@@ -33,6 +33,7 @@ public class TestScenario extends TestBase {
         System.out.println();
         new PageObjectWithName(driver).clickButton();
         testCase.pass("Get title Successfully");
+        System.out.println("print for the test commit changes");
 
     }
 
