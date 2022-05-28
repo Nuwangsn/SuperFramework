@@ -1,0 +1,19 @@
+[INFO ] 2022-05-25 21:27:27.519 [main] TestBase - Adding prerequisite Data Started
+[INFO ] 2022-05-25 21:27:27.524 [main] TestBase - info! Test
+[INFO ] 2022-05-25 21:27:27.524 [main] TestBase - Init Method is Starting from here ------------------------------------------------------ 
+[INFO ] 2022-05-25 21:28:06.137 [main] TestBase - Initialize chromedriver using WebDriverManager....
+[INFO ] 2022-05-25 21:28:06.834 [main] TestBase - Maximized window
+[ERROR] 2022-05-25 21:28:06.924 [main] TestBase - Exception occurred when getting the system information
+[INFO ] 2022-05-25 21:28:11.157 [main] TestBase - Initialize chromedriver using WebDriverManager....
+[INFO ] 2022-05-25 21:28:11.333 [main] TestBase - Maximized window
+[INFO ] 2022-05-25 21:28:18.073 [main] TestBase - try to find By.xpath: //input[@name='q'] driver is org.openqa.selenium.By$ByXPath
+[INFO ] 2022-05-25 21:28:18.163 [main] TestBase - Found By.xpath: //input[@name='q']and the result is Decorated {[[ChromeDriver: chrome on LINUX (b1a821f8d2d9af3c582a528cfb8522bd)] -> xpath: //input[@name='q']]}
+[INFO ] 2022-05-25 21:28:18.358 [main] TestBase - try to find By.xpath: //img[@alt='Google'] driver is org.openqa.selenium.By$ByXPath
+[INFO ] 2022-05-25 21:28:18.386 [main] TestBase - Found By.xpath: //img[@alt='Google']and the result is Decorated {[[ChromeDriver: chrome on LINUX (b1a821f8d2d9af3c582a528cfb8522bd)] -> xpath: //img[@alt='Google']]}
+[INFO ] 2022-05-25 21:28:18.420 [main] TestBase - try to find By.xpath: //img[@class='lnXdpd'] driver is org.openqa.selenium.By$ByXPath
+[INFO ] 2022-05-25 21:28:18.469 [main] TestBase - Found By.xpath: //img[@class='lnXdpd']and the result is Decorated {[[ChromeDriver: chrome on LINUX (b1a821f8d2d9af3c582a528cfb8522bd)] -> xpath: //img[@class='lnXdpd']]}
+[INFO ] 2022-05-25 21:28:18.504 [main] TestBase - try to find By.xpath: //input[@name='q'] driver is org.openqa.selenium.By$ByXPath
+[INFO ] 2022-05-25 21:28:18.536 [main] TestBase - Found By.xpath: //input[@name='q']and the result is Decorated {[[ChromeDriver: chrome on LINUX (b1a821f8d2d9af3c582a528cfb8522bd)] -> xpath: //input[@name='q']]}
+[INFO ] 2022-05-25 21:28:20.554 [main] TestBase - Initialize chromedriver using WebDriverManager....
+[INFO ] 2022-05-25 21:28:20.732 [main] TestBase - Maximized window
+[WARN ] 2022-05-25 21:28:23.518 [main] TestBase - Error in title

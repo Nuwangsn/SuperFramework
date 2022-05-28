@@ -1,0 +1,17 @@
+[INFO ] 2022-05-28 08:12:57.041 [main] TestBase - Adding prerequisite Data Started
+[INFO ] 2022-05-28 08:12:57.050 [main] TestBase - info! Test
+[INFO ] 2022-05-28 08:12:57.050 [main] TestBase - Init Method is Starting from here ------------------------------------------------------ 
+[INFO ] 2022-05-28 08:12:59.455 [main] TestBase - Initialize chromedriver using WebDriverManager....
+[INFO ] 2022-05-28 08:12:59.977 [main] TestBase - Maximized window
+[INFO ] 2022-05-28 08:13:07.064 [main] TestBase - Initialize chromedriver using WebDriverManager....
+[INFO ] 2022-05-28 08:13:07.260 [main] TestBase - Maximized window
+[INFO ] 2022-05-28 08:13:11.396 [main] TestBase - try to find By.xpath: //input[@name='q'] driver is org.openqa.selenium.By$ByXPath
+[INFO ] 2022-05-28 08:13:11.434 [main] TestBase - Found By.xpath: //input[@name='q']and the result is Decorated {[[ChromeDriver: chrome on LINUX (cce4a1af40e09c49063271cc69bf0b25)] -> xpath: //input[@name='q']]}
+[INFO ] 2022-05-28 08:13:11.519 [main] TestBase - try to find By.xpath: //img[@alt='Google'] driver is org.openqa.selenium.By$ByXPath
+[INFO ] 2022-05-28 08:13:11.563 [main] TestBase - Found By.xpath: //img[@alt='Google']and the result is Decorated {[[ChromeDriver: chrome on LINUX (cce4a1af40e09c49063271cc69bf0b25)] -> xpath: //img[@alt='Google']]}
+[INFO ] 2022-05-28 08:13:11.601 [main] TestBase - try to find By.xpath: //img[@class='lnXdpd'] driver is org.openqa.selenium.By$ByXPath
+[INFO ] 2022-05-28 08:13:11.635 [main] TestBase - Found By.xpath: //img[@class='lnXdpd']and the result is Decorated {[[ChromeDriver: chrome on LINUX (cce4a1af40e09c49063271cc69bf0b25)] -> xpath: //img[@class='lnXdpd']]}
+[INFO ] 2022-05-28 08:13:11.683 [main] TestBase - try to find By.xpath: //input[@name='q'] driver is org.openqa.selenium.By$ByXPath
+[INFO ] 2022-05-28 08:13:11.718 [main] TestBase - Found By.xpath: //input[@name='q']and the result is Decorated {[[ChromeDriver: chrome on LINUX (cce4a1af40e09c49063271cc69bf0b25)] -> xpath: //input[@name='q']]}
+[INFO ] 2022-05-28 08:13:13.242 [main] TestBase - Initialize chromedriver using WebDriverManager....
+[INFO ] 2022-05-28 08:13:13.408 [main] TestBase - Maximized window

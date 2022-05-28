@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} %p %m%n</Property>
+        <Property name="APP_LOG_ROOT">./src/test/java/Logs/</Property>
+        <Property name="ROOT">./src/test/java/Logs/SuperLogs</Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="fileLogger"
+                     fileName="${APP_LOG_ROOT}/DefaultLogs/test-automation.log"
+                     filePattern="${APP_LOG_ROOT}/DefaultLogs/app-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy  minSize="10"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <!-- Max 10 files will be created everyday -->
+            <DefaultRolloverStrategy max="10">
+                <Delete basePath="${APP_LOG_ROOT}" maxDepth="10">
+                    <!-- Delete all files older than 30 days -->
+                    <IfLastModified age="30d" />
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+<!--        info logging test separate file-->
+        <RollingFile name="infoLog" fileName="${APP_LOG_ROOT}/DefaultLogs/test-automation-info.log"
+                     filePattern="${APP_LOG_ROOT}/DefaultLogs/test-automation-info-%d{yyyy-MM-dd}.log" >
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy  minSize="10"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+
+        <!--        warn logging test separate file-->
+        <RollingFile name="warnLog" fileName="${APP_LOG_ROOT}/DefaultLogs/test-automation-warn.log"
+                     filePattern="${APP_LOG_ROOT}/DefaultLogs/test-automation-warn-%d{yyyy-MM-dd}.log" >
+            <LevelRangeFilter minLevel="WARN" maxLevel="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy  minSize="10"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+
+
+        <!--        warn logging test separate file for super log file-->
+        <RollingFile name="warnLogSuper" fileName="${ROOT}/test-automation-warn.log"
+                     filePattern="${ROOT}/test-automation-warn-%d{yyyy-MM-dd}.log" >
+            <LevelRangeFilter minLevel="WARN" maxLevel="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy  minSize="10"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="info" additivity="false">
+            <appender-ref ref="fileLogger" />
+            <AppenderRef ref="infoLog"  />
+            <AppenderRef ref="warnLog"  />
+            <AppenderRef ref="warnLogSuper"  />
+        </Root>
+
+    </Loggers>
+</Configuration>
