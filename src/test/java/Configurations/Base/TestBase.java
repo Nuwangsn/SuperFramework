@@ -30,13 +30,13 @@ public class TestBase {
             driver=InitializeDriver();
 
 //            get System Info
-            SystemInfo info = new SystemInfo();
-            info.getSystemInfo(driver);
+//            SystemInfo info = new SystemInfo();
+//            info.getSystemInfo(driver);
 
 //            set Up method
             SetUp reports = new SetUp();
             extent = reports.setUp();
-            driver.quit();
+
         }catch (Exception e){
             System.out.println("Error occurred in init method......");
             logger.warn("Error occurred in init method......");
@@ -60,5 +60,10 @@ public class TestBase {
     @AfterClass
     public void afterClass() {
         extent.flush();
+    }
+
+    @AfterSuite
+    public void afterSuite(){
+        driver.quit();
     }
 }
