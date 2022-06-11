@@ -27,7 +27,7 @@ public class TestBase {
             logger.info("Init Method is Starting from here ------------------------------------------------------ ");
 
 //            driver initialization
-            driver=InitializeDriver();
+            InitializeDriver();
 
 //            get System Info
 //            SystemInfo info = new SystemInfo();
