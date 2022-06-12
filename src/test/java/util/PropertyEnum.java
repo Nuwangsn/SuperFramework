@@ -3,6 +3,7 @@ package util;
 public enum PropertyEnum {
 
     BROWSER_CHROME("BROWSER_CHROME",""),
+    BROWSER_DOCKER("BROWSER_DOCKER",""),
     IMPLICITLY_MAXIMUM_WAIT_TIME("IMPLICITLY_MAXIMUM_WAIT_TIME",""),
     BASE_URL("BASE_URL","");
 

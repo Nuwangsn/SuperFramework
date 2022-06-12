@@ -27,7 +27,7 @@ public class TestBase {
             logger.info("Init Method is Starting from here ------------------------------------------------------ ");
 
 //            driver initialization
-            InitializeDriver();
+            driver = InitializeDriver();
 
 //            get System Info
 //            SystemInfo info = new SystemInfo();
@@ -46,7 +46,7 @@ public class TestBase {
 
     @BeforeMethod
     public void beforeTest() {
-        driver=InitializeDriver();
+
         //            base url initialization
         driver.get(AutomationProperties.getProperty(PropertyEnum.BASE_URL));
 
@@ -54,7 +54,7 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+      //  driver.quit();
     }
 
     @AfterClass
